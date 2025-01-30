@@ -19,11 +19,11 @@ My goal is to build **innovative, scalable applications** that enhance user expe
 - **Other Tools:** Zustand, Cypress, WebRTC, Socket.IO, GraphQL, GitHub Actions  
 
 ## 🌍 What I’m Working On
-- 🎮 **Friends Without Benefits** – A **scavenger hunt game** with **AI-powered object detection**  
+- 🎮 **Friends Without Benefits** – A **scavenger hunt game** with **AI-powered object detection**
+- 🏝  **JS-RPG v2** - I am converting my fantasy novel, Shadowtide Island, into a Javascript RPG with Phaser3 and Ink.js
 - 🏗️ **CatGPT** – A **Tamagotchi-style virtual pet** with **OpenAI, LangChain, and RAG integration**  
 - 📈 **E-commerce Solutions** – Automating **Shopify, Amazon, and 3PL workflows** for businesses  
 
-## 📫 Let's Connect!
-- **GitHub:** [github.com/savevsgames](https://github.com/savevsgames)  
+## 📫 Let's Connect! 
 - **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/greg-barker-savevsgames/)  
 - **Portfolio:** [Portfolio](https://my3dportfolio-iqxj.onrender.com/)  
