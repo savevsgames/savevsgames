@@ -15,7 +15,7 @@ My goal is to build **innovative, scalable applications** that enhance user expe
 - **Backend:** Node.js, Express, Flask (learning)  
 - **Databases:** PostgreSQL, MongoDB  
 - **Cloud & DevOps:** Docker, Render, Netlify  
-- **AI & ML:** TensorFlow.js, OpenCV, Python, Azure Custom Vision  
+- **AI & ML:** TensorFlow.js, LangChain, OpenCV, Python, Azure Custom Vision  
 - **Other Tools:** Zustand, Cypress, WebRTC, Socket.IO, GraphQL, GitHub Actions  
 
 ## 🌍 What I’m Working On
