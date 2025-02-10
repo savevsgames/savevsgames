@@ -1,5 +1,5 @@
 ### Hi there 👋 I'm Greg Barker
-Visiti my Web Dev Portfolio here: [PORTFOLIO](https://my3dportfolio-iqxj.onrender.com/)
+Visit my Web Dev Portfolio here: [PORTFOLIO](https://my3dportfolio-iqxj.onrender.com/)
 
 ## 🚀 About Me
 I'm a **Full Stack Developer** with a background as a **Master Electrician**.  
