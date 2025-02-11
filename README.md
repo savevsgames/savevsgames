@@ -12,18 +12,19 @@ My goal is to build **innovative, scalable applications** that enhance user expe
 - 🛠️ **Building Web Apps**: Developing projects that merge **real-time interactivity, AI, and modern web technologies**.
 
 ## 🛠️ Tech Stack
-- **Frontend:** React, React-Three/Fiber, Next.js, Tailwind CSS, TypeScript  
-- **Backend:** Node.js, Express, Flask (learning)  
-- **Databases:** PostgreSQL, MongoDB  
-- **Cloud & DevOps:** Docker, Render, Netlify  
-- **AI & ML:** TensorFlow.js, LangChain, OpenCV, Python, Azure Custom Vision  
-- **Other Tools:** Zustand, Cypress, WebRTC, Socket.IO, GraphQL, GitHub Actions  
+- **Languages, Frameworks & UI:** JavaScript & TypeScript, React & Redux/Zustand, Node.js, Python, Flask, HTML & CSS, Dart, Liquid, Three.js & React Three/Fiber
+- **Databases & Data:** Database Management, PostgreSQL & Sequelize, MongoDB & GraphQL, Redis, Wireframing & ERD, APIs, Socket.IO
+- **DevOps & Cloud:** Docker & DevOps, AWS, Azure & Render, GitHub & GitHub Actions, CI/CD, Authentication & Security
+- **AI & ML:** Prompt Engineering, LangChain & LangGraph, Azure (Custom Vision) & RoboFlow, TensorFlow & TensorFlow.js, Python, OpenCV
+- **Tools & Software:** VSCode, JetBrains, Adobe, Notion, Cypress, Postman, Insomnia, Scrivener, Phaser3, InkJs, Blender, Aesprite, Slack, Discord
+- **ECommerce:** Shopify, Amazon Seller Central, Google Merchant Center, Meta Ads Manager, Modash, UpPromote, Klaviyo, Google Analytics 
+
 
 ## 🌍 What I’m Working On
 - 🎮 **Friends Without Benefits** – A **scavenger hunt game** with **AI-powered object detection**
-- 🏝  **JS-RPG v2** - I am converting my fantasy novel, Shadowtide Island, into a Javascript RPG with Phaser3 and Ink.js
-- 🏗️ **CatGPT** – A **Tamagotchi-style virtual pet** with **OpenAI, LangChain, and RAG integration**  
-- 📈 **E-commerce Solutions** – Automating **Shopify, Amazon, and 3PL workflows** for businesses  
+- 🏝  **JS-RPG v2** - I am converting my fantasy novel, **Shadowtide Island**, into a Javascript RPG with Phaser3 and Ink.js
+- 🏗️ **CatGPT** – A **Tamagotchi-style virtual pet** with **OpenAI, LangChain, and custom LangChain/Redis RAG integration**  
+- 📈 **E-commerce Solutions** – Automation on Shopify, Google Ads Campaign, Affiliate Marketing Campaign, Influencer Marketing across various Social Media Platforms 
 
 ## 📫 Let's Connect! 
 - **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/greg-barker-savevsgames/)  
