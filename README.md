@@ -1,5 +1,6 @@
 ### HI 👋 I'm GREG BARKER (saveVSgames)
 Visit my Web Dev Portfolio here: [PORTFOLIO](https://my3dportfolio-iqxj.onrender.com/)
+Connect with me on LinkedIn here: [LINKEDIN](https://www.linkedin.com/in/greg-barker-savevsgames/)
 
 ## 🚀 About Me
 I'm a **Full Stack Developer** with a background as a **Master Electrician**.  
