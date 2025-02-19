@@ -39,7 +39,7 @@
   <!-- Row 1: -->
   <tr style="background-color: #f5f5f5;">
     <!-- JavaScript -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+    <td style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
       <img 
         src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" 
         width="40" 
