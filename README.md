@@ -2,10 +2,25 @@
 <h1 align="center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
   <span style="color: #98a9b3;">GREG BARKER</span><span style="color: #ffffff;"> (saveVSgames)</span>
 </h1>
-<p align="center">
-  <a href="https://my3dportfolio-iqxj.onrender.com/" target="_blank">🌐 Web Dev Portfolio</a> • 
-  <a href="https://www.linkedin.com/in/greg-barker-savevsgames/" target="_blank">🔗 LinkedIn</a>
-</p>
+<div align="center">
+  <table style="border-collapse: collapse;">
+    <tr style="background-color: #f5f5f5;">
+      <!-- Left link -->
+      <td align="center" style="width:100px;">
+       🌐  <a href="https://my3dportfolio-iqxj.onrender.com/" target="_blank">Web-Dev</br>Portfolio</a>
+      </td>
+      <!-- Profile image -->
+      <td align="center" style="width:100px">
+        <!-- GitHub profile image -->
+        <img src="https://github.com/savevsgames.png" width="80" alt="savevsgames profile image" />
+      </td>
+      <!-- Right link -->
+      <td align="center" style="width:100px;">
+        🔗<a href="https://www.linkedin.com/in/greg-barker-savevsgames/" target="_blank">LinkedIn</a>
+      </td>
+    </tr>
+  </table>
+</div>
 
 <hr>
 
@@ -35,6 +50,7 @@
 </ul>
 
 <!-- Tech Stack Table  -->
+<div <div align="center" style="margin:10px"><h2>My Tech Stack</h2></div>
 <table align="center" style="width:100%; border-collapse: collapse;">
   <!-- Row 1: -->
   <tr style="background-color: #f5f5f5;">
@@ -409,13 +425,16 @@
 
 
 <!-- GitHub Metrics -->
+<div align="center">
 <h2 style="border-bottom: 2px solid #e5e7eb; padding-bottom: 0.3em;">📊 GitHub Metrics</h2>
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1em;">
   <img src="https://github-readme-stats.vercel.app/api?username=savevsgames&show_icons=true&theme=radical" alt="GitHub Stats" />
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1em;">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=savevsgames&layout=compact&theme=radical" alt="Top Languages" />
 </div>
-
 <hr>
+</div>
 
 <!-- Footer -->
 <p align="center" style="font-style: italic;">
