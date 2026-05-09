@@ -54,6 +54,14 @@ graph LR
     Containers --> Bundles
 ```
 
+#### Agent wallets & testnet
+
+Built-in wallet system with a live testnet. Agents can hold balances, transfer funds, and settle transactions — real money movement in a sandboxed environment. Designed for testing payment flows, agent-to-agent commerce, and transaction-driven workflows before going live.
+
+#### Open source
+
+The [OINKMOJI protocol](https://stablepiggy.com/docs) and other platform documentation are published openly. Architecture specs, protocol definitions, and integration guides available at [stablepiggy.com/docs](https://stablepiggy.com/docs).
+
 #### Testing & quality
 
 2,800+ automated tests across backend and dashboard. CI runs on every pull request — typecheck, drift guards, migration safety, and security audit gates all enforced before merge.
