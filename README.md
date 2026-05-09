@@ -75,6 +75,29 @@ Waitlist with seat-capacity management, honeypot defense, and tamper-resistant s
 
 ---
 
+### CVPO — Continuity Video Prompt Orchestrator
+
+An end-to-end video production orchestration system built for a media production client. CVPO transforms story concepts into structured, edit-ready video projects — generating scripts, storyboard frames, voice-over takes, and b-roll selections, then packaging everything for import into Adobe Premiere Pro.
+
+```mermaid
+graph TD
+    Concept[Story Concept] --> Generate[AI Story Generation]
+    Generate --> Scenes[Scene & Shot Breakdown]
+    Scenes --> Frames[Frame Generation<br><em>DALL-E</em>]
+    Scenes --> VO[Voice-Over Generation<br><em>Gemini TTS · 3 takes per clip</em>]
+    Scenes --> BRoll[B-Roll Search<br><em>Internet Archive</em>]
+    Frames --> Export[Export Package]
+    VO --> Export
+    BRoll --> Export
+    Export --> Premiere[Adobe Premiere Pro]
+```
+
+The system runs on Google Cloud Run with a React frontend on Cloudflare Pages, backed by Supabase (PostgreSQL). AI generation uses OpenAI for story and frame generation and Google Gemini for text-to-speech and vision analysis. Access is restricted to the client's team via Cloudflare Zero Trust with Google OAuth.
+
+Reusable production blocks (camera setups, lighting rigs, character profiles, editing styles) let the team build a library of templates that carry across projects — consistent visual language without rebuilding from scratch every time.
+
+---
+
 ### Napoleon Foundry Module
 
 An AI game master assistant for [Foundry VTT](https://foundryvtt.com/) — available on [Docker Hub](https://hub.docker.com/r/savevsgames/napoleon-foundry) and pending Foundry marketplace review.
@@ -113,6 +136,7 @@ What I actually use in production:
 |--------|-------------|
 | **Platform & Infrastructure** | Node.js, TypeScript, Express, SQLite (WAL), Docker, Caddy, pm2, GitHub Actions CI/CD |
 | **AI & LLM Integration** | Anthropic Claude, OpenAI, OpenRouter, MCP Protocol, RAG with Voyage embeddings, multi-provider tool loops |
+| **Cloud & Deployment** | Google Cloud Run, Cloudflare Pages, Cloudflare Zero Trust, Supabase (PostgreSQL) |
 | **Security** | AES-256-GCM encryption, Argon2id hashing, JWT with revocation, HMAC verification, CSP/HSTS, container egress firewalling |
 | **Frontend** | React, Vite, Tailwind CSS, SSE streaming, WebSocket |
 | **Data & Analytics** | Python, pandas, predictive modeling, BI reporting, demand forecasting |
@@ -122,7 +146,7 @@ What I actually use in production:
 
 ## Background
 
-Data Analytics and and Pipeline Architecure Design. Full stack development program at the University of Toronto. E-commerce experience (Shopify store management and Liquid code). Former Master Electrician — the kind of background where you learn that cutting corners on safety gets people hurt, which turns out to be a useful instinct when you're writing security audits and building vault encryption systems.
+Data Analytics and Pipeline Architecture Design. Full stack development program at the University of Toronto. E-commerce experience (Shopify store management and Liquid code). Former Master Electrician — the kind of background where you learn that cutting corners on safety gets people hurt, which turns out to be a useful instinct when you're writing security audits and building vault encryption systems.
 
 ---
 
