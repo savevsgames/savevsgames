@@ -1,442 +1,126 @@
-<!-- Main Header -->
-<h1 align="center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-  <span style="color: #98a9b3;">GREG BARKER</span><span style="color: #ffffff;"> (saveVSgames)</span>
-</h1>
-<div align="center">
-  <table style="border-collapse: collapse;">
-    <tr style="background-color: #f5f5f5;">
-      <!-- Left link -->
-      <td align="center" style="width:100px;">
-       🌐  <a href="https://my3dportfolio-iqxj.onrender.com/" target="_blank">Web-Dev</br>Portfolio</a>
-      </td>
-      <!-- Profile image -->
-      <td align="center" style="width:100px">
-        <!-- GitHub profile image -->
-        <img src="https://github.com/savevsgames.png" width="80" alt="savevsgames profile image" />
-      </td>
-      <!-- Right link -->
-      <td align="center" style="width:100px;">
-        🔗<a href="https://www.linkedin.com/in/greg-barker-savevsgames/" target="_blank">LinkedIn</a>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<hr>
-
-<!-- About Me Section -->
-<h2 style="border-bottom: 2px solid #e5e7eb; padding-bottom: 0.3em;">About Me</h2>
-<p style="line-height: 1.6;">
-  I'm a <strong>Full Stack Developer</strong> with a background as a <strong>Master Electrician</strong>.
-  I recently completed a <strong>Full Stack Bootcamp at EdX</strong>, and I’m deeply involved in <strong>AI, web development, and e-commerce solutions</strong>.
-  My mission is to build <strong>innovative, scalable applications</strong> that transform user experiences.
+<h1 align="center">Greg Barker</h1>
+<p align="center">
+  <strong>Platform engineer · AI systems · Data analytics</strong><br>
+  Building tools that give developers (and game masters) superpowers.
 </p>
 
-<!-- Currently Working On -->
-<h2 style="border-bottom: 2px solid #e5e7eb; padding-bottom: 0.3em;">🚀 What I’m Up To</h2>
-<ul>
-  <li>⚡ <strong>E-commerce Management:</strong> Running a Shopify store for a client with integrated Amazon sales and 3PL shipping solutions.</li>
-  <li>🤖 <strong>AI Experiments:</strong> Implementing machine learning models to create AI-driven user experiences.</li>
-  <li>🛠️ <strong>Web App Development:</strong> Crafting interactive applications that merge real-time data, AI, and modern web technologies.</li>
-</ul>
+<p align="center">
+  <a href="https://stablepiggy.com">stablepiggy.com</a> · 
+  <a href="https://www.linkedin.com/in/greg-barker-savevsgames/">LinkedIn</a> · 
+  <a href="https://github.com/savevsgames">GitHub</a>
+</p>
 
-<!-- Projects -->
-<h2 style="border-bottom: 2px solid #e5e7eb; padding-bottom: 0.3em;">🌍 Projects</h2>
-<ul>
-  <li>🎮 <strong>Friends Without Benefits</strong> – A scavenger hunt game featuring AI-powered object detection.</li>
-  <li>🏝 <strong>JS-RPG v2</strong> – Transforming my fantasy novel, <em>Shadowtide Island</em>, into an immersive JavaScript RPG using Phaser3 and Ink.js.</li>
-  <li>🏗️ <strong>CatGPT</strong> – Developing a Tamagotchi-style virtual pet with OpenAI, LangChain, and custom Redis RAG integration.</li>
-  <li>📈 <strong>E-commerce Solutions</strong> – Automating processes on Shopify, managing Google Ads, and executing affiliate & influencer marketing campaigns.</li>
-</ul>
+---
 
-<!-- Tech Stack Table  -->
-<div <div align="center" style="margin:10px"><h2>My Tech Stack</h2></div>
-<table align="center" style="width:100%; border-collapse: collapse;">
-  <!-- Row 1: -->
-  <tr style="background-color: #f5f5f5;">
-    <!-- JavaScript -->
-    <td style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" 
-        width="40" 
-        height="40" 
-        alt="JavaScript"
-      />
-      <br>JavaScript
-    </td>
-    <!-- TypeScript -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" 
-        width="40" 
-        height="40" 
-        alt="TypeScript"
-      />
-      <br>TypeScript
-    </td>
-    <!-- HTML -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://cdn.worldvectorlogo.com/logos/html-1.svg" 
-        width="40" 
-        height="40" 
-        alt="HTML5"
-      />
-      <br>HTML
-    </td>
-    <!-- CSS -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://cdn.worldvectorlogo.com/logos/css-3.svg" 
-        width="40" 
-        height="40" 
-        alt="CSS3"
-      />
-      <br>CSS
-    </td>
-    <!-- React -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" 
-        width="40" 
-        height="40" 
-        alt="React"
-      />
-      <br>React
-    </td>
-  </tr>
+## What I'm building
 
-  <!-- Row 2 -->
-  <tr style="background-color: #eeeeee;">
-    <!-- Vue.js -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg" 
-        width="40" 
-        height="40" 
-        alt="Vue.js"
-      />
-      <br>Vue.js
-    </td>
-    <!-- Next.js -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://s3.amazonaws.com/cmscritic.mediasite.org/assets/products/nextjs/logo-291886093470.jpeg"
-        width="40" 
-        height="40" 
-        alt="Next.js" 
-        style="background-color: #ffffff; padding: 5px; border-radius: 5px;"
-      />
-      <br>Next.js
-    </td>
-    <!-- Tailwind CSS -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" 
-        width="40" 
-        height="40" 
-        alt="Tailwind CSS" 
-      />
-      <br>Tailwind CSS
-    </td>
-    <!-- Bootstrap -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg" 
-        width="40" 
-        height="40" 
-        alt="Bootstrap" 
-      />
-      <br>Bootstrap
-    </td>
-    <!-- Material UI -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://cdn.worldvectorlogo.com/logos/material-ui-1.svg" 
-        width="40" 
-        height="40" 
-        alt="Material UI" 
-      />
-      <br>Material UI
-    </td>
-  </tr>
+### StablePiggy DevVault
 
-  <!-- Row 3 -->
-  <tr style="background-color: #f5f5f5;">
-    <!-- Three.js -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://canada1.discourse-cdn.com/flex035/uploads/threejs/original/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751.png" 
-        width="40" 
-        height="40" 
-        alt="Three.js" 
-      />
-      <br>Three.js
-    </td>
-    <!-- React Three -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" 
-        width="40" 
-        height="40" 
-        alt="React Three/Fiber" 
-      />
-      <br>React Three
-    </td>
-    <!-- GSAP -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg" 
-        width="40" 
-        height="40" 
-        alt="GSAP" 
-      />
-      <br>GSAP
-    </td>
-    <!-- Electron.js -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg" 
-        width="40" 
-        height="40" 
-        alt="Electron.js" 
-      />
-      <br>Electron.js
-    </td>
-    <!-- Figma -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" 
-        width="40" 
-        height="40" 
-        alt="Figma" 
-      />
-      <br>Figma
-    </td>
-  </tr>
+A multi-tenant developer platform where AI agents operate inside isolated, sandboxed environments — managing containers, vaults, knowledge bases, and deployment pipelines through a unified MCP protocol interface.
 
-  <!-- Row 4 -->
-  <tr style="background-color: #eeeeee;">
-    <!-- Node.js -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" 
-        width="40" 
-        height="40" 
-        alt="Node.js" 
-      />
-      <br>Node.js
-    </td>
-    <!-- Python -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" 
-        width="40" 
-        height="40" 
-        alt="Python" 
-      />
-      <br>Python
-    </td>
-    <!-- Flask -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://ih1.redbubble.net/image.4811016471.3585/st,small,507x507-pad,600x600,f8f8f8.jpg" 
-        width="40" 
-        height="40" 
-        alt="Flask" 
-      />
-      <br>Flask
-    </td>
-    <!-- Express.js -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://e7.pngegg.com/pngimages/925/447/png-clipart-express-js-node-js-javascript-mongodb-node-js-text-trademark-thumbnail.png" 
-        width="40" 
-        height="40" 
-        alt="Express.js" 
-        style="background-color: #ffffff; padding: 5px; border-radius: 5px;"
-      />
-      <br>Express.js
-    </td>
-    <!-- Java -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" 
-        width="40" 
-        height="40" 
-        alt="Java" 
-      />
-      <br>Java
-    </td>
-  </tr>
+Napoleon, the platform's AI assistant, helps developers ship code through managed infrastructure — all within the org-scoped, security-audited system. As a representation of a containerized integration, Napoleon can help game masters run tabletop RPG sessions in Foundry VTT with real module context. Any container run on the platform can be spun up and have integrations built to allow Napoleon to interact with it. 
 
-  <!-- Row 5 -->
-  <tr style="background-color: #f5f5f5;">
-    <!-- Spring Boot -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg" 
-        width="40" 
-        height="40" 
-        alt="Spring Boot" 
-      />
-      <br>Spring Boot
-    </td>
-    <!-- GitHub Actions -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://raw.githubusercontent.com/github/explore/main/topics/actions/actions.png" 
-        width="40" 
-        height="40" 
-        alt="GitHub Actions" 
-        style="background-color: #ffffff; padding: 5px; border-radius: 5px;"
-      />
-      <br>GitHub Actions
-    </td>
-    <!-- Docker -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" 
-        width="40" 
-        height="40" 
-        alt="Docker" 
-      />
-      <br>Docker
-    </td>
-    <!-- Prettier -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://cdn.worldvectorlogo.com/logos/prettier-1.svg" 
-        width="40" 
-        height="40" 
-        alt="Prettier" 
-      />
-      <br>Prettier
-    </td>
-    <!-- ESLint -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/eslint/eslint-original.svg" 
-        width="40" 
-        height="40" 
-        alt="ESLint" 
-      />
-      <br>ESLint
-    </td>
-  </tr>
+```mermaid
+graph LR
+    subgraph Platform
+        MCP[MCP Protocol Server<br><em>146 tools</em>]
+        Vault[Encrypted Vault<br><em>AES-256-GCM · scoped tiers</em>]
+        Containers[Container Orchestration<br><em>Docker · Caddy · per-org isolation</em>]
+        Bundles[Composite Templates<br><em>multi-container apps</em>]
+        Napoleon[Napoleon AI<br><em>multi-provider · tool loop</em>]
+    end
 
-  <!-- Row 6 -->
-  <tr style="background-color: #eeeeee;">
-    <!-- AWS -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://cdn.worldvectorlogo.com/logos/aws-2.svg" 
-        width="40" 
-        height="40" 
-        alt="AWS" 
-      />
-      <br>AWS
-    </td>
-    <!-- Azure -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://cdn.worldvectorlogo.com/logos/azure-1.svg" 
-        width="40" 
-        height="40" 
-        alt="Azure" 
-      />
-      <br>Azure
-    </td>
-    <!-- Socket.IO -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://cdn.worldvectorlogo.com/logos/socket-io-1.svg" 
-        width="40" 
-        height="40" 
-        alt="Socket.IO" 
-        style="background-color: #ffffff; padding: 5px; border-radius: 5px;"
-      />
-      <br>Socket.IO
-    </td>
-    <!-- OpenCV -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/opencv/opencv-original.svg" 
-        width="40" 
-        height="40" 
-        alt="OpenCV" 
-      />
-      <br>OpenCV
-    </td>
-    <!-- TensorFlow -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg" 
-        width="40" 
-        height="40" 
-        alt="TensorFlow" 
-      />
-      <br>TensorFlow
-    </td>
-  </tr>
+    subgraph Clients
+        Claude[Claude Code]
+        Junie[JetBrains Junie]
+        Foundry[Foundry VTT Module]
+        Dashboard[Web Dashboard]
+    end
 
-  <!-- Row 7 -->
-  <tr style="background-color: #f5f5f5;">
-    <!-- PyTorch -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pytorch/pytorch-original.svg" 
-        width="40" 
-        height="40" 
-        alt="PyTorch" 
-      />
-      <br>PyTorch
-    </td>
-    <!-- Hugging Face -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://huggingface.co/front/assets/huggingface_logo.svg" 
-        width="40" 
-        height="40" 
-        alt="Hugging Face" 
-      />
-      <br>Hugging Face
-    </td>
-    <!-- Blender -->
-    <td style="vertical-align: middle; text-align:center; padding:10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <img 
-        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/blender/blender-original.svg" 
-        width="40" 
-        height="40" 
-        alt="Blender" 
-      />
-      <br>Blender
-    </td>
-    <!-- Empty Cell 1 -->
-    <td style="vertical-align: middle; text-align:center; padding:10px;"></td>
-    <!-- Empty Cell 2 -->
-    <td style="vertical-align: middle; text-align:center; padding:10px;"></td>
-  </tr>
-</table>
+    Claude -->|MCP| MCP
+    Junie -->|MCP| MCP
+    Foundry -->|WebSocket Relay| Napoleon
+    Dashboard -->|REST + SSE| MCP
+    MCP --> Vault
+    MCP --> Containers
+    MCP --> Napoleon
+    Containers --> Bundles
+```
+
+**What's under the hood:**
+
+- **2,800+ tests** across backend and dashboard, enforced by CI on every PR
+- **16-phase security audit** — zero critical findings, comprehensive threat model with attack trees, GDPR erasure cascade, incident response runbooks
+- **Composite template system** for multi-container apps with lifecycle-scoped volumes (runtime / data / service separation)
+- **Encrypted vault** with tiered access (personal → org → platform), per-key AAD, automated key rotation tooling
+- **Secret redaction engine** — pattern-based scrub on chat persistence, tool-annotated `_secret_payload` protocol, one-shot reveal UX
+- **Container hardening** — cap-drop ALL, no-new-privileges, read-only rootfs, non-root, per-session egress rules via iptables
+- **MCP compatibility** across Claude Code, Junie CLI, and Codex, with integrations for Ollama and OpenRouter in the online chat interface. Nearly 200 custom tools with automated setup scripts and diagnostic tooling
+- **Waitlist + seat-capacity system** with controlled onboarding, honeypot defense, HMAC tombstones for re-signup prevention
+
+### Napoleon Foundry Module
+
+An AI game master assistant for [Foundry VTT](https://foundryvtt.com/) — available on [Docker Hub](https://hub.docker.com/r/savevsgames/napoleon-foundry) and pending Foundry marketplace review.
+
+Napoleon reads real module content (actors, scenes, journals) from purchased adventure modules and answers questions, builds encounters, places walls and lighting, and manages session continuity — all from inside the Foundry interface. Trough entries are scoped to the user who owns them only and cannot be shared with other users ensuring data sovereignty.
+
+- **Derived Docker image** (`savevsgames/napoleon-foundry`) bakes the module into `felddy/foundryvtt:13` with version-tracked releases
+- **Per-org relay isolation** — each game master's WebSocket relay runs in its own container with a minted, revocable API key
+- **Five-case loud-failure UX** — missing auth token, wrong relay URL, malformed URL, auth rejected, relay unreachable — each with actionable Foundry notifications
 
 
+### PromptBlocker
 
+PromptBlocker is a Chrome Extension that automatically replaces your real personal information (name, email, phone, etc.) with aliases when using AI chat services like ChatGPT, Claude, Gemini, Perplexity, and Copilot. It's development formed the basis of my zero trust approach to designing StablePiggy.
 
+Key Features:
 
+- **Bidirectional Aliasing**: Encode requests (real → alias), decode responses (alias → real)
+- **5 AI Platforms**: ChatGPT, Claude, Gemini, Perplexity, Copilot (98% market coverage)
+- **AES-256-GCM Encryption**: Firebase UID-based key derivation (enterprise-grade security)
+- **FREE + PRO Tiers**: Basic protection free forever, advanced features $4.99/mo
+- **750 Passing Tests**: Enterprise-grade test coverage (697 unit + 53 integration)
+- **Local-First Privacy**: Profiles never leave your device (zero-knowledge architecture)
 
-<!-- GitHub Metrics -->
-<div align="center">
-<h2 style="border-bottom: 2px solid #e5e7eb; padding-bottom: 0.3em;">📊 GitHub Metrics</h2>
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1em;">
-  <img src="https://github-readme-stats.vercel.app/api?username=savevsgames&show_icons=true&theme=radical" alt="GitHub Stats" />
-</div>
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1em;">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=savevsgames&layout=compact&theme=radical" alt="Top Languages" />
-</div>
-<hr>
-</div>
+---
 
-<!-- Footer -->
-<p align="center" style="font-style: italic;">
-  Thank you for stopping by! Let's connect and build something amazing together.
+## What I've shipped professionally
+
+### Data Analytics & Business Intelligence
+
+Founding member of a consultancy delivering data analytics and BI solutions. Headline engagement:
+
+- **$2.5M in inventory savings** identified through predictive modeling and demand forecasting for a consumer goods client
+- Built automated BI reporting pipelines with triggers, analysis models for sales orders, production actual vs forecast, material costs and more - in addition to building executive dashboards
+- Delivered actionable recommendations that drove procurement and logistics decisions
+- Creating our own Java application SaaS that allows enterprise users to safely and deterministically query their own data in natural language (NLP to SQL).
+
+---
+
+## Stack
+
+What I actually use in production, not what I've touched once in a tutorial.
+
+| Domain | Technologies |
+|--------|-------------|
+| **Platform & Infrastructure** | Node.js, TypeScript, Express, SQLite (WAL), Docker, Caddy, pm2, GitHub Actions CI/CD |
+| **AI & LLM Integration** | Anthropic Claude, OpenAI, OpenRouter, MCP Protocol, RAG with Voyage embeddings, multi-provider tool loops |
+| **Security** | AES-256-GCM vault encryption, Argon2id password hashing, JWT with revocation, HMAC webhook verification, CSP/HSTS headers, per-container egress firewalling |
+| **Frontend** | React, Vite, Tailwind CSS, SSE streaming, WebSocket |
+| **Data & Analytics** | Python, pandas, predictive modeling, BI reporting, demand forecasting |
+| **Protocols** | MCP (Model Context Protocol), WebSocket relay, Stripe webhooks, GitHub App webhooks, Foundry VTT module API |
+
+---
+
+## Background
+
+Full stack development program at the University of Toronto. Former Master Electrician — the kind of background where you learn that cutting corners on safety gets people hurt, which turns out to be a useful instinct when you're writing security audits and building vault encryption systems.
+
+---
+
+<p align="center">
+  StablePiggy: <a href="https://stablepiggy.com">stablepiggy.com</a> · 
+  <a href="mailto:greg@stablepiggy.com">greg@stablepiggy.com</a> · <BR>
+  Other Inquiries: <a href="mailto:greg@stablepiggy.com">gregcbarker@gmail.com</a> · 
+  <a href="https://www.linkedin.com/in/greg-barker-savevsgames/">LinkedIn</a> ·
 </p>
