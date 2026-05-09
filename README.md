@@ -14,12 +14,16 @@
 
 ## What I'm building
 
-### StablePiggy DevVault
+---
 
 <p align="center">
   <p><b>WHAT IS STABLEPIGGY?</b></p>
-  <img src="./assets/napoleon.svg" width="200" alt="Napoleon - StablePiggy AI Assistant" />
+  <img src="./assets/napoleon.svg" width="400" alt="Napoleon - StablePiggy AI Assistant" />
 </p>
+
+---
+
+### StablePiggy DevVault
 
 A multi-tenant developer platform where AI agents operate inside isolated, sandboxed environments — managing containers, vaults, knowledge bases, and deployment pipelines through a unified MCP protocol interface.
 
