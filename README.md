@@ -12,20 +12,16 @@
 
 ---
 
-## What I'm building
-
----
+## What I'm Building
 
 <p align="center">
-  <p><b>WHAT IS STABLEPIGGY?</b></p>
+  <p><b>WHAT IS StablePiggy.com?</b></p>
   <img src="./assets/napoleon.svg" width="400" alt="Napoleon - StablePiggy AI Assistant" />
 </p>
 
----
-
 ### StablePiggy DevVault
 
-A multi-tenant developer platform where AI agents operate inside isolated, sandboxed environments — managing containers, vaults, knowledge bases, and deployment pipelines through a unified MCP protocol interface.
+**Stablecoin Wallet Infrastructure & Tooling for Agentic Financial Agency**: A multi-tenant developer platform where AI agents operate inside isolated, sandboxed environments — managing containers, vaults, knowledge bases, and deployment pipelines through a unified MCP protocol interface.
 
 Napoleon, the platform's AI assistant, helps developers ship code through managed infrastructure — all within the org-scoped, security-audited system. As a representation of a containerized integration, Napoleon can help game masters run tabletop RPG sessions in Foundry VTT with real module content. Any container run on the platform can be spun up and have integrations built to allow Napoleon to interact with it.
 
