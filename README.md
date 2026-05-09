@@ -124,7 +124,7 @@ Founding member of a consultancy delivering data analytics and BI solutions.
 
 **$2.5M in inventory savings** identified for a consumer goods client through predictive modeling and demand forecasting. Built automated reporting pipelines covering sales orders, production actuals vs. forecast, and material costs. Delivered executive dashboards and actionable recommendations that drove procurement and logistics decisions.
 
-Currently building a Java SaaS application that lets enterprise users safely query their own data in natural language — NLP to SQL with deterministic output.
+Currently preparing StablePiggy for launch by onboarding trusted users in batches. Also building a Java SaaS application with my data analytics team — JHipster foundation, transposed from a working TypeScript prototype into domain-driven Java architecture — that lets enterprise users safely query their own data in natural language. NLP to SQL with deterministic output.
 
 ---
 
@@ -135,8 +135,9 @@ What I actually use in production:
 | Domain | Technologies |
 |--------|-------------|
 | **Platform & Infrastructure** | Node.js, TypeScript, Express, SQLite (WAL), Docker, Caddy, pm2, GitHub Actions CI/CD |
+| **Enterprise & Backend** | Java, Spring Boot (JHipster), domain-driven architecture, PostgreSQL, NLP-to-SQL pipelines |
 | **AI & LLM Integration** | Anthropic Claude, OpenAI, OpenRouter, MCP Protocol, RAG with Voyage embeddings, multi-provider tool loops |
-| **Cloud & Deployment** | Google Cloud Run, Cloudflare Pages, Cloudflare Zero Trust, Supabase (PostgreSQL) |
+| **Cloud & Deployment** | Google Cloud Run, Cloudflare Pages, Cloudflare Zero Trust, Supabase (PostgreSQL), Vultr VPS |
 | **Security** | AES-256-GCM encryption, Argon2id hashing, JWT with revocation, HMAC verification, CSP/HSTS, container egress firewalling |
 | **Frontend** | React, Vite, Tailwind CSS, SSE streaming, WebSocket |
 | **Data & Analytics** | Python, pandas, predictive modeling, BI reporting, demand forecasting |
