@@ -122,7 +122,7 @@ What I actually use in production, not what I've touched once in a tutorial.
 
 ## Background
 
-Full stack development program at the University of Toronto. Former Master Electrician — the kind of background where you learn that cutting corners on safety gets people hurt, which turns out to be a useful instinct when you're writing security audits and building vault encryption systems.
+Data Analytics and and Pipeline Architecure Design. Full stack development program at the University of Toronto. E-commerce experience (Shopify store management and Liquid code). Former Master Electrician — the kind of background where you learn that cutting corners on safety gets people hurt, which turns out to be a useful instinct when you're writing security audits and building vault encryption systems.
 
 ---
 
