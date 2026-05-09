@@ -17,6 +17,7 @@
 ### StablePiggy DevVault
 
 <p align="center">
+  <p><b>WHAT IS STABLEPIGGY?</b></p>
   <img src="./assets/napoleon.svg" width="200" alt="Napoleon - StablePiggy AI Assistant" />
 </p>
 
