@@ -107,7 +107,7 @@ Currently building a Java SaaS application that lets enterprise users safely que
 
 ## Stack
 
-What I actually use in production, not what I've touched once in a tutorial.
+What I actually use in production:
 
 | Domain | Technologies |
 |--------|-------------|
