@@ -72,12 +72,12 @@ graph LR
     class Bundles app;
     class Napoleon ai;
 
-    classDef client fill:#1f2937,stroke:#60a5fa,color:#ffffff,stroke-width:1px;
-    classDef core fill:#172554,stroke:#38bdf8,color:#ffffff,stroke-width:2px;
-    classDef secure fill:#312e81,stroke:#a78bfa,color:#ffffff,stroke-width:1px;
-    classDef infra fill:#14532d,stroke:#86efac,color:#ffffff,stroke-width:1px;
-    classDef app fill:#431407,stroke:#fbbf24,color:#ffffff,stroke-width:1px;
-    classDef ai fill:#581c87,stroke:#e879f9,color:#ffffff,stroke-width:2px;
+    classDef client fill:#10161d,stroke:#22d3ee,color:#f8fafc,stroke-width:1px;
+    classDef core fill:#061826,stroke:#38bdf8,color:#f8fafc,stroke-width:2px;
+    classDef secure fill:#111827,stroke:#32d74b,color:#f8fafc,stroke-width:2px;
+    classDef infra fill:#071a12,stroke:#32d74b,color:#f8fafc,stroke-width:1px;
+    classDef app fill:#1f1a05,stroke:#facc15,color:#f8fafc,stroke-width:1px;
+    classDef ai fill:#0b1220,stroke:#22d3ee,color:#f8fafc,stroke-width:2px;
 ```
 
 #### Agent wallets & testnet
@@ -120,15 +120,36 @@ An end-to-end video production orchestration system built for a media production
 
 ```mermaid
 graph TD
-    Concept[Story Concept] --> Generate[AI Story Generation]
-    Generate --> Scenes[Scene & Shot Breakdown]
-    Scenes --> Frames[Frame Generation<br><em>DALL-E</em>]
-    Scenes --> VO[Voice-Over Generation<br><em>Gemini TTS · 3 takes per clip</em>]
-    Scenes --> BRoll[B-Roll Search<br><em>Internet Archive</em>]
-    Frames --> Export[Export Package]
+    Concept["Story Concept<br/><em>prompt · outline · idea</em>"]
+    Generate["AI Story Generation<br/><em>script draft</em>"]
+    Scenes["Scene & Shot Breakdown<br/><em>shots · pacing · assets</em>"]
+    Frames["Frame Generation<br/><em>DALL-E</em>"]
+    VO["Voice-Over Generation<br/><em>Gemini TTS · 3 takes per clip</em>"]
+    BRoll["B-Roll Search<br/><em>Internet Archive</em>"]
+    Export["Export Package<br/><em>audio · frames · b-roll · script</em>"]
+    Premiere["Adobe Premiere Pro<br/><em>final edit</em>"]
+
+    Concept --> Generate
+    Generate --> Scenes
+    Scenes --> Frames
+    Scenes --> VO
+    Scenes --> BRoll
+    Frames --> Export
     VO --> Export
     BRoll --> Export
-    Export --> Premiere[Adobe Premiere Pro]
+    Export --> Premiere
+
+    class Concept concept;
+    class Generate,Scenes generation;
+    class Frames,VO,BRoll media;
+    class Export export;
+    class Premiere app;
+
+    classDef concept fill:#10161d,stroke:#22d3ee,color:#f8fafc,stroke-width:1px;
+    classDef generation fill:#071a12,stroke:#32d74b,color:#f8fafc,stroke-width:2px;
+    classDef media fill:#061826,stroke:#38bdf8,color:#f8fafc,stroke-width:1px;
+    classDef export fill:#1f1a05,stroke:#facc15,color:#f8fafc,stroke-width:2px;
+    classDef app fill:#111827,stroke:#94a3b8,color:#f8fafc,stroke-width:1px;
 ```
 
 The system runs on Google Cloud Run with a React frontend on Cloudflare Pages, backed by Supabase (PostgreSQL). AI generation uses OpenAI for story and frame generation and Google Gemini for text-to-speech and vision analysis. Access is restricted to the client's team via Cloudflare Zero Trust with Google OAuth.
