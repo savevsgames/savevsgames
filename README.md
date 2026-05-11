@@ -119,84 +119,70 @@ Waitlist with seat-capacity management, honeypot defense, and tamper-resistant s
 An end-to-end video production orchestration system built for a media production client. CVPO transforms story concepts into structured, edit-ready video projects — generating scripts, storyboard frames, voice-over takes, and b-roll selections, then spinning up cloud GPUs to do the inference with customized images of frontier models. Finally, packaging everything for import into Adobe Premiere Pro using a custom OTIO output format to sync images, video and audio pre-edit.
 
 ```mermaid
-graph LR
-    subgraph Inputs["Inputs"]
-        Concept["Creative Concept"]
-        Refs["Style / Character References"]
-        ScriptInput["Existing Script / Notes"]
-    end
+graph TD
+    Concept["Creative Concept<br/><em>idea · prompt · outline</em>"]
+    Script["Script / Story Generation<br/><em>narration · beats · scenes</em>"]
+    Breakdown["Scene & Shot Breakdown<br/><em>shot list · prompts · continuity notes</em>"]
 
-    subgraph CVPO["CVPO Orchestration Core"]
-        Planner["Story + Shot Planner"]
-        PromptEngine["Prompt Builder<br/><em>scene · style · continuity</em>"]
-        JobQueue["Generation Job Queue"]
-        TimelineBuilder["Timeline Builder"]
-        AssetRegistry["Asset Registry<br/><em>prompts · outputs · metadata</em>"]
-    end
+    Assets["Asset Planning<br/><em>characters · locations · props · style refs</em>"]
 
-    subgraph Generation["Generation Layer"]
-        ImageGen["Image Generation"]
-        VideoGen["Image-to-Video<br/><em>WAN 2 · HF models</em>"]
-        KenBurns["Ken Burns Effects"]
-        MotionGfx["Motion Graphics<br/><em>lower thirds · titles</em>"]
-        Voice["Voice-Over / TTS"]
-        BRoll["B-Roll Search"]
-    end
+    Images["Image Generation<br/><em>DALL-E · SD · HF models</em>"]
+    Frames["First / Last Frame Planning<br/><em>continuity anchors</em>"]
+    VideoGen["Image-to-Video Generation<br/><em>WAN 2 · Hugging Face models</em>"]
+    KenBurns["Ken Burns Quick Effects<br/><em>image → video clips</em>"]
+    Motion["Motion Graphics<br/><em>lower thirds · titles · overlays</em>"]
+    VO["Voice-Over Generation<br/><em>Gemini TTS · multiple takes</em>"]
+    BRoll["B-Roll Search<br/><em>Internet Archive · stock sources</em>"]
 
-    subgraph Compute["On-Demand Compute"]
-        RunPod["RunPod GPUs"]
-        GoogleGPU["Google GPUs"]
-        Local["Local Machine"]
-    end
+    GPU["GPU Job Router<br/><em>RunPod · Google GPUs · local fallback</em>"]
+    RenderJobs["Render / Generation Jobs<br/><em>queued · tracked · reproducible</em>"]
 
-    subgraph Outputs["Editor Outputs"]
-        OTIO["OTIO Timeline"]
-        Package["Media Export Package"]
-        Premiere["Adobe Premiere Pro"]
-    end
+    Timeline["Timeline Assembly<br/><em>clips · audio · captions · overlays</em>"]
+    OTIO["OTIO Timeline Export<br/><em>OpenTimelineIO</em>"]
+    Package["Export Package<br/><em>media · metadata · prompts · timeline</em>"]
+    Premiere["Adobe Premiere Pro<br/><em>final edit / polish</em>"]
 
-    Concept --> Planner
-    Refs --> PromptEngine
-    ScriptInput --> Planner
+    Concept --> Script
+    Script --> Breakdown
+    Breakdown --> Assets
 
-    Planner --> PromptEngine
-    PromptEngine --> JobQueue
-    JobQueue --> ImageGen
-    JobQueue --> VideoGen
-    JobQueue --> KenBurns
-    JobQueue --> MotionGfx
-    JobQueue --> Voice
-    JobQueue --> BRoll
+    Assets --> Images
+    Images --> Frames
+    Frames --> VideoGen
+    Images --> KenBurns
+    Breakdown --> Motion
+    Breakdown --> VO
+    Breakdown --> BRoll
 
-    JobQueue --> RunPod
-    JobQueue --> GoogleGPU
-    JobQueue --> Local
+    VideoGen --> GPU
+    GPU --> RenderJobs
+    RenderJobs --> VideoGen
 
-    ImageGen --> AssetRegistry
-    VideoGen --> AssetRegistry
-    KenBurns --> AssetRegistry
-    MotionGfx --> AssetRegistry
-    Voice --> AssetRegistry
-    BRoll --> AssetRegistry
+    VideoGen --> Timeline
+    KenBurns --> Timeline
+    Motion --> Timeline
+    VO --> Timeline
+    BRoll --> Timeline
 
-    AssetRegistry --> TimelineBuilder
-    TimelineBuilder --> OTIO
-    TimelineBuilder --> Package
+    Timeline --> OTIO
+    Timeline --> Package
     OTIO --> Premiere
     Package --> Premiere
 
-    class Concept,Refs,ScriptInput input;
-    class Planner,PromptEngine,JobQueue,TimelineBuilder,AssetRegistry core;
-    class ImageGen,VideoGen,KenBurns,MotionGfx,Voice,BRoll generation;
-    class RunPod,GoogleGPU,Local compute;
-    class OTIO,Package export;
+    class Concept,Script,Breakdown concept;
+    class Assets,Images,Frames media;
+    class VideoGen,KenBurns,Motion generation;
+    class VO,BRoll support;
+    class GPU,RenderJobs compute;
+    class Timeline,OTIO,Package export;
     class Premiere app;
 
-    classDef input fill:#10161d,stroke:#22d3ee,color:#f8fafc,stroke-width:1px;
-    classDef core fill:#061826,stroke:#38bdf8,color:#f8fafc,stroke-width:2px;
-    classDef generation fill:#071a12,stroke:#32d74b,color:#f8fafc,stroke-width:1px;
-    classDef compute fill:#1f1a05,stroke:#facc15,color:#f8fafc,stroke-width:2px;
-    classDef export fill:#111827,stroke:#facc15,color:#f8fafc,stroke-width:1px;
+    classDef concept fill:#10161d,stroke:#22d3ee,color:#f8fafc,stroke-width:1px;
+    classDef media fill:#061826,stroke:#38bdf8,color:#f8fafc,stroke-width:1px;
+    classDef generation fill:#071a12,stroke:#32d74b,color:#f8fafc,stroke-width:2px;
+    classDef support fill:#0b1220,stroke:#22d3ee,color:#f8fafc,stroke-width:1px;
+    classDef compute fill:#111827,stroke:#facc15,color:#f8fafc,stroke-width:2px;
+    classDef export fill:#1f1a05,stroke:#facc15,color:#f8fafc,stroke-width:2px;
     classDef app fill:#18181b,stroke:#94a3b8,color:#f8fafc,stroke-width:1px;
 ```
 
