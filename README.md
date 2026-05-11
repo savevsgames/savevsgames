@@ -116,40 +116,88 @@ Waitlist with seat-capacity management, honeypot defense, and tamper-resistant s
 
 ### CVPO — Continuity Video Prompt Orchestrator
 
-An end-to-end video production orchestration system built for a media production client. CVPO transforms story concepts into structured, edit-ready video projects — generating scripts, storyboard frames, voice-over takes, and b-roll selections, then packaging everything for import into Adobe Premiere Pro.
+An end-to-end video production orchestration system built for a media production client. CVPO transforms story concepts into structured, edit-ready video projects — generating scripts, storyboard frames, voice-over takes, and b-roll selections, then spinning up cloud GPUs to do the inference with customized images of frontier models. Finally, packaging everything for import into Adobe Premiere Pro using a custom OTIO output format to sync images, video and audio pre-edit.
 
 ```mermaid
-graph TD
-    Concept["Story Concept<br/><em>prompt · outline · idea</em>"]
-    Generate["AI Story Generation<br/><em>script draft</em>"]
-    Scenes["Scene & Shot Breakdown<br/><em>shots · pacing · assets</em>"]
-    Frames["Frame Generation<br/><em>DALL-E</em>"]
-    VO["Voice-Over Generation<br/><em>Gemini TTS · 3 takes per clip</em>"]
-    BRoll["B-Roll Search<br/><em>Internet Archive</em>"]
-    Export["Export Package<br/><em>audio · frames · b-roll · script</em>"]
-    Premiere["Adobe Premiere Pro<br/><em>final edit</em>"]
+graph LR
+    subgraph Inputs["Inputs"]
+        Concept["Creative Concept"]
+        Refs["Style / Character References"]
+        ScriptInput["Existing Script / Notes"]
+    end
 
-    Concept --> Generate
-    Generate --> Scenes
-    Scenes --> Frames
-    Scenes --> VO
-    Scenes --> BRoll
-    Frames --> Export
-    VO --> Export
-    BRoll --> Export
-    Export --> Premiere
+    subgraph CVPO["CVPO Orchestration Core"]
+        Planner["Story + Shot Planner"]
+        PromptEngine["Prompt Builder<br/><em>scene · style · continuity</em>"]
+        JobQueue["Generation Job Queue"]
+        TimelineBuilder["Timeline Builder"]
+        AssetRegistry["Asset Registry<br/><em>prompts · outputs · metadata</em>"]
+    end
 
-    class Concept concept;
-    class Generate,Scenes generation;
-    class Frames,VO,BRoll media;
-    class Export export;
+    subgraph Generation["Generation Layer"]
+        ImageGen["Image Generation"]
+        VideoGen["Image-to-Video<br/><em>WAN 2 · HF models</em>"]
+        KenBurns["Ken Burns Effects"]
+        MotionGfx["Motion Graphics<br/><em>lower thirds · titles</em>"]
+        Voice["Voice-Over / TTS"]
+        BRoll["B-Roll Search"]
+    end
+
+    subgraph Compute["On-Demand Compute"]
+        RunPod["RunPod GPUs"]
+        GoogleGPU["Google GPUs"]
+        Local["Local Machine"]
+    end
+
+    subgraph Outputs["Editor Outputs"]
+        OTIO["OTIO Timeline"]
+        Package["Media Export Package"]
+        Premiere["Adobe Premiere Pro"]
+    end
+
+    Concept --> Planner
+    Refs --> PromptEngine
+    ScriptInput --> Planner
+
+    Planner --> PromptEngine
+    PromptEngine --> JobQueue
+    JobQueue --> ImageGen
+    JobQueue --> VideoGen
+    JobQueue --> KenBurns
+    JobQueue --> MotionGfx
+    JobQueue --> Voice
+    JobQueue --> BRoll
+
+    JobQueue --> RunPod
+    JobQueue --> GoogleGPU
+    JobQueue --> Local
+
+    ImageGen --> AssetRegistry
+    VideoGen --> AssetRegistry
+    KenBurns --> AssetRegistry
+    MotionGfx --> AssetRegistry
+    Voice --> AssetRegistry
+    BRoll --> AssetRegistry
+
+    AssetRegistry --> TimelineBuilder
+    TimelineBuilder --> OTIO
+    TimelineBuilder --> Package
+    OTIO --> Premiere
+    Package --> Premiere
+
+    class Concept,Refs,ScriptInput input;
+    class Planner,PromptEngine,JobQueue,TimelineBuilder,AssetRegistry core;
+    class ImageGen,VideoGen,KenBurns,MotionGfx,Voice,BRoll generation;
+    class RunPod,GoogleGPU,Local compute;
+    class OTIO,Package export;
     class Premiere app;
 
-    classDef concept fill:#10161d,stroke:#22d3ee,color:#f8fafc,stroke-width:1px;
-    classDef generation fill:#071a12,stroke:#32d74b,color:#f8fafc,stroke-width:2px;
-    classDef media fill:#061826,stroke:#38bdf8,color:#f8fafc,stroke-width:1px;
-    classDef export fill:#1f1a05,stroke:#facc15,color:#f8fafc,stroke-width:2px;
-    classDef app fill:#111827,stroke:#94a3b8,color:#f8fafc,stroke-width:1px;
+    classDef input fill:#10161d,stroke:#22d3ee,color:#f8fafc,stroke-width:1px;
+    classDef core fill:#061826,stroke:#38bdf8,color:#f8fafc,stroke-width:2px;
+    classDef generation fill:#071a12,stroke:#32d74b,color:#f8fafc,stroke-width:1px;
+    classDef compute fill:#1f1a05,stroke:#facc15,color:#f8fafc,stroke-width:2px;
+    classDef export fill:#111827,stroke:#facc15,color:#f8fafc,stroke-width:1px;
+    classDef app fill:#18181b,stroke:#94a3b8,color:#f8fafc,stroke-width:1px;
 ```
 
 The system runs on Google Cloud Run with a React frontend on Cloudflare Pages, backed by Supabase (PostgreSQL). AI generation uses OpenAI for story and frame generation and Google Gemini for text-to-speech and vision analysis. Access is restricted to the client's team via Cloudflare Zero Trust with Google OAuth.
