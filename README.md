@@ -14,13 +14,23 @@
 
 ## What I'm Building
 
-<p align="center">
-  <h2><b>StablePiggy.com</b> - StablePiggy: The Dev-Vault</h2>
-  <div style="flex">
-    <img src="./assets/sp-appicon-01.png" width="400" alt="Napoleon - StablePiggy AI Assistant" />
-    <img src="./assets/SP-LOGO-01-cropped.png" width="400" alt="Napoleon - StablePiggy AI Assistant" />
-  </div>
-</p>
+<div align="center">
+
+## **StablePiggy.com** - StablePiggy: The Dev-Vault
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="./assets/sp-appicon-01.png" width="300" alt="Napoleon - StablePiggy AI Assistant" />
+    </td>
+    <td width="24"></td>
+    <td align="center">
+      <img src="./assets/SP-LOGO-01-cropped.png" width="300" alt="StablePiggy Logo" />
+    </td>
+  </tr>
+</table>
+
+</div>
 
 **ZERO TRUST JIT Exec Grant Stablecoin Wallet Infrastructure & Tooling for Agentic Platform & Financial Agency**: A multi-tenant developer platform where AI agents operate inside isolated, sandboxed environments — managing containers, vaults, knowledge bases, and deployment pipelines through a unified MCP protocol interface.
 
