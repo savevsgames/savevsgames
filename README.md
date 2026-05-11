@@ -16,6 +16,7 @@
 
 <p align="center">
   <h2><b>StablePiggy.com</b> - StablePiggy: The Dev-Vault</h2> 
+  <img src="./assets/sp-appicon-01.png" width="400" alt="Napoleon - StablePiggy AI Assistant" />
   <img src="./assets/SP-LOGO-01-cropped.png" width="400" alt="Napoleon - StablePiggy AI Assistant" />
 </p>
 
