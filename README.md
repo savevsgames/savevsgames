@@ -38,31 +38,46 @@ Napoleon, the platform's AI assistant, helps developers ship code through manage
 
 ```mermaid
 graph LR
-    subgraph Platform
-        MCP[MCP Protocol Server<br><em>146 tools</em>]
-        Vault[Encrypted Vault<br><em>AES-256-GCM · scoped tiers</em>]
-        Containers[Container Orchestration<br><em>Docker · Caddy · per-org isolation</em>]
-        Bundles[Composite Templates<br><em>multi-container apps</em>]
-        Napoleon[Napoleon AI<br><em>multi-provider · tool loop</em>]
+    subgraph Clients["Clients"]
+        Dashboard["Web Dashboard"]
+        Junie["JetBrains Junie"]
+        Codex["OpenAI Codex"]
+        Claude["Claude Code"]
+        Foundry["Foundry VTT Module"]
     end
 
-    subgraph Clients
-        Claude[Claude Code]
-        Codex[OpenAI Codex]
-        Junie[JetBrains Junie]
-        Foundry[Foundry VTT Module]
-        Dashboard[Web Dashboard]
+    subgraph Platform["StablePiggy Platform"]
+        MCP["MCP Protocol Server<br/><em>146 tools</em>"]
+        Vault["Encrypted Vault<br/><em>AES-256-GCM · scoped tiers</em>"]
+        Containers["Container Orchestration<br/><em>Docker · Caddy · per-org isolation</em>"]
+        Bundles["Composite Templates<br/><em>multi-container apps</em>"]
+        Napoleon["Napoleon AI<br/><em>multi-provider · tool loop</em>"]
     end
 
-    Claude -->|MCP| MCP
-    Codex -->|MCP| MCP
-    Junie -->|MCP| MCP
-    Foundry -->|WebSocket Relay| Napoleon
     Dashboard -->|REST + SSE| MCP
+    Junie -->|MCP| MCP
+    Codex -->|MCP| MCP
+    Claude -->|MCP| MCP
+    Foundry -->|WebSocket Relay| Napoleon
+
     MCP --> Vault
     MCP --> Containers
     MCP --> Napoleon
     Containers --> Bundles
+
+    class Dashboard,Junie,Codex,Claude,Foundry client;
+    class MCP core;
+    class Vault secure;
+    class Containers infra;
+    class Bundles app;
+    class Napoleon ai;
+
+    classDef client fill:#1f2937,stroke:#60a5fa,color:#ffffff,stroke-width:1px;
+    classDef core fill:#172554,stroke:#38bdf8,color:#ffffff,stroke-width:2px;
+    classDef secure fill:#312e81,stroke:#a78bfa,color:#ffffff,stroke-width:1px;
+    classDef infra fill:#14532d,stroke:#86efac,color:#ffffff,stroke-width:1px;
+    classDef app fill:#431407,stroke:#fbbf24,color:#ffffff,stroke-width:1px;
+    classDef ai fill:#581c87,stroke:#e879f9,color:#ffffff,stroke-width:2px;
 ```
 
 #### Agent wallets & testnet
