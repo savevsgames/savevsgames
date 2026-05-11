@@ -16,7 +16,7 @@
 
 <p align="center">
   <h2><b>StablePiggy.com</b> - StablePiggy: The Dev-Vault</h2> 
-  <img src="./assets/napoleon.svg" width="400" alt="Napoleon - StablePiggy AI Assistant" />
+  <img src="./assets/SP-LOGO-01-cropped.png" width="400" alt="Napoleon - StablePiggy AI Assistant" />
 </p>
 
 **ZERO TRUST JIT Exec Grant Stablecoin Wallet Infrastructure & Tooling for Agentic Platform & Financial Agency**: A multi-tenant developer platform where AI agents operate inside isolated, sandboxed environments — managing containers, vaults, knowledge bases, and deployment pipelines through a unified MCP protocol interface.
